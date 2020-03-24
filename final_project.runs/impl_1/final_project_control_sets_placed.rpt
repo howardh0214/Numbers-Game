@@ -1,0 +1,170 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Jun 20 11:52:43 2019
+| Host         : 223-A07 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file final_project_control_sets_placed.rpt
+| Design       : final_project
+| Device       : xc7a35t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    98 |
+| Unused register locations in slices containing registers |   635 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           83 |
+|      3 |            1 |
+|      4 |            2 |
+|      5 |            1 |
+|      7 |            1 |
+|      8 |            2 |
+|     10 |            1 |
+|     14 |            1 |
+|    16+ |            6 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              78 |           64 |
+| No           | No                    | Yes                    |              87 |           65 |
+| No           | Yes                   | No                     |              35 |           35 |
+| Yes          | No                    | No                     |              13 |            6 |
+| Yes          | No                    | Yes                    |              88 |           33 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------+------------------------+--------------------------------------+------------------+----------------+
+|              Clock Signal             |      Enable Signal     |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
++---------------------------------------+------------------------+--------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[14]_LDC_i_1_n_0 |                1 |              1 |
+|  u4/counter100Mhz_reg[26]_LDC_i_1_n_0 |                        | u4/counter100Mhz_reg[26]_LDC_i_2_n_0 |                1 |              1 |
+|  u4/counter30_reg[0]_LDC_i_1_n_0      |                        | u4/counter30_reg[0]_LDC_i_2_n_0      |                1 |              1 |
+|  u4/counter30_reg[1]_LDC_i_1_n_0      |                        | u4/counter30_reg[1]_LDC_i_2_n_0      |                1 |              1 |
+|  u4/counter30_reg[3]_LDC_i_1_n_0      |                        | u4/counter30_reg[3]_LDC_i_2_n_0      |                1 |              1 |
+|  u4/counter30_reg[4]_LDC_i_1_n_0      |                        | u4/counter30_reg[4]_LDC_i_2_n_0      |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | cs_reg[4]_LDC_i_1_n_0                |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | cs_reg[4]_LDC_i_2_n_0                |                1 |              1 |
+|  u4/counter30_reg[2]_LDC_i_1_n_0      |                        | u4/counter30_reg[2]_LDC_i_2_n_0      |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[0]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[18]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[23]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[12]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[16]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[13]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[22]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[24]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[11]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[1]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[19]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[21]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[20]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[17]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[10]_LDC_i_1_n_0 |                1 |              1 |
+|  led_reg[12]/G0                       |                        |                                      |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[15]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[8]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[9]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[5]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[7]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[2]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[25]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[3]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[6]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[27]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[4]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter100Mhz_reg[26]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter30_reg[0]_LDC_i_1_n_0      |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter30_reg[1]_LDC_i_1_n_0      |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter30_reg[3]_LDC_i_1_n_0      |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter30_reg[4]_LDC_i_1_n_0      |                1 |              1 |
+|  clk_IBUF_BUFG                        |                        | u4/counter30_reg[2]_LDC_i_1_n_0      |                1 |              1 |
+|  led_reg[15]/G0                       |                        |                                      |                1 |              1 |
+|  led_reg[14]/G0                       |                        |                                      |                1 |              1 |
+|  cs_reg[4]_LDC_i_1_n_0                |                        | cs_reg[4]_LDC_i_2_n_0                |                1 |              1 |
+| ~ps2clk_IBUF_BUFG                     |                        | u2/data_curr[7]_i_2_n_0              |                1 |              1 |
+|  led_reg[13]/G0                       |                        |                                      |                1 |              1 |
+| ~ps2clk_IBUF_BUFG                     | u2/data_curr_0[4]      | u2/data_curr[7]_i_2_n_0              |                1 |              1 |
+| ~ps2clk_IBUF_BUFG                     | u2/data_curr_0[2]      | u2/data_curr[7]_i_2_n_0              |                1 |              1 |
+| ~ps2clk_IBUF_BUFG                     | u2/data_curr_0[5]      | u2/data_curr[7]_i_2_n_0              |                1 |              1 |
+| ~ps2clk_IBUF_BUFG                     | u2/data_curr_0[0]      | u2/data_curr[7]_i_2_n_0              |                1 |              1 |
+| ~ps2clk_IBUF_BUFG                     | u2/data_curr_0[1]      | u2/data_curr[7]_i_2_n_0              |                1 |              1 |
+| ~ps2clk_IBUF_BUFG                     | u2/data_curr_0[3]      | u2/data_curr[7]_i_2_n_0              |                1 |              1 |
+| ~ps2clk_IBUF_BUFG                     | u2/data_curr_0[6]      | u2/data_curr[7]_i_2_n_0              |                1 |              1 |
+| ~ps2clk_IBUF_BUFG                     | u2/data_curr_0[7]      | u2/data_curr[7]_i_2_n_0              |                1 |              1 |
+|  p_0_out[15]                          |                        | led_reg[11]_i_1_n_0                  |                1 |              1 |
+|  u4/counter100Mhz_reg[0]_LDC_i_1_n_0  |                        | u4/counter100Mhz_reg[0]_LDC_i_2_n_0  |                1 |              1 |
+|  u4/counter100Mhz_reg[18]_LDC_i_1_n_0 |                        | u4/counter100Mhz_reg[18]_LDC_i_2_n_0 |                1 |              1 |
+|  u4/counter100Mhz_reg[23]_LDC_i_1_n_0 |                        | u4/counter100Mhz_reg[23]_LDC_i_2_n_0 |                1 |              1 |
+|  u4/counter100Mhz_reg[14]_LDC_i_1_n_0 |                        | u4/counter100Mhz_reg[14]_LDC_i_2_n_0 |                1 |              1 |
+|  u4/counter100Mhz_reg[16]_LDC_i_1_n_0 |                        | u4/counter100Mhz_reg[16]_LDC_i_2_n_0 |                1 |              1 |
+|  u4/counter100Mhz_reg[13]_LDC_i_1_n_0 |                        | u4/counter100Mhz_reg[13]_LDC_i_2_n_0 |                1 |              1 |
+|  u4/counter100Mhz_reg[22]_LDC_i_1_n_0 |                        | u4/counter100Mhz_reg[22]_LDC_i_2_n_0 |                1 |              1 |
+|  u4/counter100Mhz_reg[24]_LDC_i_1_n_0 |                        | u4/counter100Mhz_reg[24]_LDC_i_2_n_0 |                1 |              1 |
+|  u4/counter100Mhz_reg[11]_LDC_i_1_n_0 |                        | u4/counter100Mhz_reg[11]_LDC_i_2_n_0 |                1 |              1 |
+|  u4/counter100Mhz_reg[1]_LDC_i_1_n_0  |                        | u4/counter100Mhz_reg[1]_LDC_i_2_n_0  |                1 |              1 |
+|  u4/counter100Mhz_reg[19]_LDC_i_1_n_0 |                        | u4/counter100Mhz_reg[19]_LDC_i_2_n_0 |                1 |              1 |
+|  u4/counter100Mhz_reg[21]_LDC_i_1_n_0 |                        | u4/counter100Mhz_reg[21]_LDC_i_2_n_0 |                1 |              1 |
+|  u4/counter100Mhz_reg[20]_LDC_i_1_n_0 |                        | u4/counter100Mhz_reg[20]_LDC_i_2_n_0 |                1 |              1 |
+|  u4/counter100Mhz_reg[17]_LDC_i_1_n_0 |                        | u4/counter100Mhz_reg[17]_LDC_i_2_n_0 |                1 |              1 |
+|  u4/counter100Mhz_reg[10]_LDC_i_1_n_0 |                        | u4/counter100Mhz_reg[10]_LDC_i_2_n_0 |                1 |              1 |
+|  u4/counter100Mhz_reg[12]_LDC_i_1_n_0 |                        | u4/counter100Mhz_reg[12]_LDC_i_2_n_0 |                1 |              1 |
+|  u4/counter100Mhz_reg[15]_LDC_i_1_n_0 |                        | u4/counter100Mhz_reg[15]_LDC_i_2_n_0 |                1 |              1 |
+|  u4/counter100Mhz_reg[8]_LDC_i_1_n_0  |                        | u4/counter100Mhz_reg[8]_LDC_i_2_n_0  |                1 |              1 |
+|  u4/counter100Mhz_reg[9]_LDC_i_1_n_0  |                        | u4/counter100Mhz_reg[9]_LDC_i_2_n_0  |                1 |              1 |
+|  u4/counter100Mhz_reg[5]_LDC_i_1_n_0  |                        | u4/counter100Mhz_reg[5]_LDC_i_2_n_0  |                1 |              1 |
+|  u4/counter100Mhz_reg[7]_LDC_i_1_n_0  |                        | u4/counter100Mhz_reg[7]_LDC_i_2_n_0  |                1 |              1 |
+|  u4/counter100Mhz_reg[2]_LDC_i_1_n_0  |                        | u4/counter100Mhz_reg[2]_LDC_i_2_n_0  |                1 |              1 |
+|  u4/counter100Mhz_reg[25]_LDC_i_1_n_0 |                        | u4/counter100Mhz_reg[25]_LDC_i_2_n_0 |                1 |              1 |
+|  u4/counter100Mhz_reg[3]_LDC_i_1_n_0  |                        | u4/counter100Mhz_reg[3]_LDC_i_2_n_0  |                1 |              1 |
+|  u4/counter100Mhz_reg[6]_LDC_i_1_n_0  |                        | u4/counter100Mhz_reg[6]_LDC_i_2_n_0  |                1 |              1 |
+|  u4/counter100Mhz_reg[27]_LDC_i_1_n_0 |                        | u4/counter100Mhz_reg[27]_LDC_i_2_n_0 |                1 |              1 |
+|  u4/counter100Mhz_reg[4]_LDC_i_1_n_0  |                        | u4/counter100Mhz_reg[4]_LDC_i_2_n_0  |                1 |              1 |
+|  wrong_BUFG                           |                        | rst_IBUF                             |                2 |              3 |
+| ~ps2clk_IBUF_BUFG                     | u2/b                   | u2/data_curr[7]_i_2_n_0              |                1 |              4 |
+|  u4/clockout1                         |                        | rst_IBUF                             |                4 |              4 |
+|  clk_IBUF_BUFG                        | ns[4]_i_1_n_0          |                                      |                4 |              5 |
+|  u4/rightsev_reg[6]_i_2_n_0           |                        |                                      |                4 |              7 |
+|  u2/flag                              | u2/data_pre[7]_i_1_n_0 |                                      |                2 |              8 |
+|  u2/flag                              | u2/out                 | u2/data_curr[7]_i_2_n_0              |                1 |              8 |
+|  u0/inst/clk_out1                     | u1/y_cnt0              | rst_IBUF                             |                7 |             10 |
+|  u0/inst/clk_out1                     | u1/y_cnt_reg[2]_1      | rst_IBUF                             |                4 |             14 |
+|  u0/inst/clk_out1                     | u1/y_cnt_reg[2]_0      | rst_IBUF                             |                5 |             17 |
+|  clk_IBUF_BUFG                        |                        |                                      |               13 |             17 |
+|  u0/inst/clk_out1                     |                        | rst_IBUF                             |               14 |             22 |
+|  clk_IBUF_BUFG                        |                        | rst_IBUF                             |                9 |             22 |
+|  clk_IBUF_BUFG                        | counter[26]_i_1_n_0    | rst_IBUF                             |                7 |             27 |
+|  u0/inst/clk_out1                     |                        |                                      |               43 |             50 |
++---------------------------------------+------------------------+--------------------------------------+------------------+----------------+
+
+
